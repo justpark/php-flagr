@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**entities** | [**\Swagger\Client\Model\EvaluationEntity[]**](EvaluationEntity.md) |  | 
+**entities** | [**\Justpark\Flagr\Model\EvaluationEntity[]**](EvaluationEntity.md) |  | 
 **enable_debug** | **bool** |  | [optional] 
 **flag_i_ds** | **int[]** | flagIDs | [optional] 
 **flag_keys** | **string[]** | flagKeys. Either flagIDs or flagKeys works. If pass in both, Flagr may return duplicate results. | [optional] 

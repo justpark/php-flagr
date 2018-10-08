@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Justpark\Flagr\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Justpark\Flagr\ObjectSerializer;
 
 /**
  * FlagSnapshot Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class FlagSnapshot implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'updated_by' => 'string',
-        'flag' => '\Swagger\Client\Model\Flag',
+        'flag' => '\Justpark\Flagr\Model\Flag',
         'updated_at' => 'string'
     ];
 
@@ -311,7 +311,7 @@ class FlagSnapshot implements ModelInterface, ArrayAccess
     /**
      * Gets flag
      *
-     * @return \Swagger\Client\Model\Flag
+     * @return \Justpark\Flagr\Model\Flag
      */
     public function getFlag()
     {
@@ -321,7 +321,7 @@ class FlagSnapshot implements ModelInterface, ArrayAccess
     /**
      * Sets flag
      *
-     * @param \Swagger\Client\Model\Flag $flag flag
+     * @param \Justpark\Flagr\Model\Flag $flag flag
      *
      * @return $this
      */

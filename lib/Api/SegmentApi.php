@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Justpark\Flagr\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Justpark\Flagr\ApiException;
+use Justpark\Flagr\Configuration;
+use Justpark\Flagr\HeaderSelector;
+use Justpark\Flagr\ObjectSerializer;
 
 /**
  * SegmentApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -86,11 +86,11 @@ class SegmentApi
      * Operation createSegment
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
-     * @param  \Swagger\Client\Model\CreateSegmentRequest $body create a segment under a flag (required)
+     * @param  \Justpark\Flagr\Model\CreateSegmentRequest $body create a segment under a flag (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Segment
+     * @return \Justpark\Flagr\Model\Segment
      */
     public function createSegment($flag_id, $body)
     {
@@ -102,15 +102,15 @@ class SegmentApi
      * Operation createSegmentWithHttpInfo
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
-     * @param  \Swagger\Client\Model\CreateSegmentRequest $body create a segment under a flag (required)
+     * @param  \Justpark\Flagr\Model\CreateSegmentRequest $body create a segment under a flag (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Segment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Justpark\Flagr\Model\Segment, HTTP status code, HTTP response headers (array of strings)
      */
     public function createSegmentWithHttpInfo($flag_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Segment';
+        $returnType = '\Justpark\Flagr\Model\Segment';
         $request = $this->createSegmentRequest($flag_id, $body);
 
         try {
@@ -162,7 +162,7 @@ class SegmentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Segment',
+                        '\Justpark\Flagr\Model\Segment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -170,7 +170,7 @@ class SegmentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class SegmentApi
      * 
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
-     * @param  \Swagger\Client\Model\CreateSegmentRequest $body create a segment under a flag (required)
+     * @param  \Justpark\Flagr\Model\CreateSegmentRequest $body create a segment under a flag (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -207,14 +207,14 @@ class SegmentApi
      * 
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
-     * @param  \Swagger\Client\Model\CreateSegmentRequest $body create a segment under a flag (required)
+     * @param  \Justpark\Flagr\Model\CreateSegmentRequest $body create a segment under a flag (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createSegmentAsyncWithHttpInfo($flag_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Segment';
+        $returnType = '\Justpark\Flagr\Model\Segment';
         $request = $this->createSegmentRequest($flag_id, $body);
 
         return $this->client
@@ -258,7 +258,7 @@ class SegmentApi
      * Create request for operation 'createSegment'
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
-     * @param  \Swagger\Client\Model\CreateSegmentRequest $body create a segment under a flag (required)
+     * @param  \Justpark\Flagr\Model\CreateSegmentRequest $body create a segment under a flag (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -372,7 +372,7 @@ class SegmentApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -387,7 +387,7 @@ class SegmentApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -431,7 +431,7 @@ class SegmentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -627,9 +627,9 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Segment[]
+     * @return \Justpark\Flagr\Model\Segment[]
      */
     public function findSegments($flag_id)
     {
@@ -642,13 +642,13 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag to get (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Segment[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Justpark\Flagr\Model\Segment[], HTTP status code, HTTP response headers (array of strings)
      */
     public function findSegmentsWithHttpInfo($flag_id)
     {
-        $returnType = '\Swagger\Client\Model\Segment[]';
+        $returnType = '\Justpark\Flagr\Model\Segment[]';
         $request = $this->findSegmentsRequest($flag_id);
 
         try {
@@ -700,7 +700,7 @@ class SegmentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Segment[]',
+                        '\Justpark\Flagr\Model\Segment[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -708,7 +708,7 @@ class SegmentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -750,7 +750,7 @@ class SegmentApi
      */
     public function findSegmentsAsyncWithHttpInfo($flag_id)
     {
-        $returnType = '\Swagger\Client\Model\Segment[]';
+        $returnType = '\Justpark\Flagr\Model\Segment[]';
         $request = $this->findSegmentsRequest($flag_id);
 
         return $this->client
@@ -897,11 +897,11 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Swagger\Client\Model\PutSegmentRequest $body update a segment (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentRequest $body update a segment (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\Segment
+     * @return \Justpark\Flagr\Model\Segment
      */
     public function putSegment($flag_id, $segment_id, $body)
     {
@@ -914,15 +914,15 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Swagger\Client\Model\PutSegmentRequest $body update a segment (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentRequest $body update a segment (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\Segment, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Justpark\Flagr\Model\Segment, HTTP status code, HTTP response headers (array of strings)
      */
     public function putSegmentWithHttpInfo($flag_id, $segment_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Segment';
+        $returnType = '\Justpark\Flagr\Model\Segment';
         $request = $this->putSegmentRequest($flag_id, $segment_id, $body);
 
         try {
@@ -974,7 +974,7 @@ class SegmentApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Segment',
+                        '\Justpark\Flagr\Model\Segment',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -982,7 +982,7 @@ class SegmentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Swagger\Client\Model\PutSegmentRequest $body update a segment (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentRequest $body update a segment (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1021,14 +1021,14 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Swagger\Client\Model\PutSegmentRequest $body update a segment (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentRequest $body update a segment (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putSegmentAsyncWithHttpInfo($flag_id, $segment_id, $body)
     {
-        $returnType = '\Swagger\Client\Model\Segment';
+        $returnType = '\Justpark\Flagr\Model\Segment';
         $request = $this->putSegmentRequest($flag_id, $segment_id, $body);
 
         return $this->client
@@ -1073,7 +1073,7 @@ class SegmentApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Swagger\Client\Model\PutSegmentRequest $body update a segment (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentRequest $body update a segment (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1203,9 +1203,9 @@ class SegmentApi
      * Operation putSegmentsReorder
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Swagger\Client\Model\PutSegmentReorderRequest $body reorder segments (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentReorderRequest $body reorder segments (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1218,9 +1218,9 @@ class SegmentApi
      * Operation putSegmentsReorderWithHttpInfo
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Swagger\Client\Model\PutSegmentReorderRequest $body reorder segments (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentReorderRequest $body reorder segments (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1264,7 +1264,7 @@ class SegmentApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1280,7 +1280,7 @@ class SegmentApi
      * 
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Swagger\Client\Model\PutSegmentReorderRequest $body reorder segments (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentReorderRequest $body reorder segments (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1301,7 +1301,7 @@ class SegmentApi
      * 
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Swagger\Client\Model\PutSegmentReorderRequest $body reorder segments (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentReorderRequest $body reorder segments (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1338,7 +1338,7 @@ class SegmentApi
      * Create request for operation 'putSegmentsReorder'
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Swagger\Client\Model\PutSegmentReorderRequest $body reorder segments (required)
+     * @param  \Justpark\Flagr\Model\PutSegmentReorderRequest $body reorder segments (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

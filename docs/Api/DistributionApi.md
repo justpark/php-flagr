@@ -1,4 +1,4 @@
-# Swagger\Client\DistributionApi
+# Justpark\Flagr\DistributionApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **findDistributions**
-> \Swagger\Client\Model\Distribution[] findDistributions($flag_id, $segment_id)
+> \Justpark\Flagr\Model\Distribution[] findDistributions($flag_id, $segment_id)
 
 
 
@@ -18,7 +18,7 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DistributionApi(
+$apiInstance = new Justpark\Flagr\Api\DistributionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -44,7 +44,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Distribution[]**](../Model/Distribution.md)
+[**\Justpark\Flagr\Model\Distribution[]**](../Model/Distribution.md)
 
 ### Authorization
 
@@ -58,7 +58,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putDistributions**
-> \Swagger\Client\Model\Distribution[] putDistributions($flag_id, $segment_id, $body)
+> \Justpark\Flagr\Model\Distribution[] putDistributions($flag_id, $segment_id, $body)
 
 
 
@@ -69,14 +69,14 @@ replace the distribution with the new setting
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\DistributionApi(
+$apiInstance = new Justpark\Flagr\Api\DistributionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag
 $segment_id = 789; // int | numeric ID of the segment
-$body = new \Swagger\Client\Model\PutDistributionsRequest(); // \Swagger\Client\Model\PutDistributionsRequest | array of distributions
+$body = new \Justpark\Flagr\Model\PutDistributionsRequest(); // \Justpark\Flagr\Model\PutDistributionsRequest | array of distributions
 
 try {
     $result = $apiInstance->putDistributions($flag_id, $segment_id, $body);
@@ -93,11 +93,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **flag_id** | **int**| numeric ID of the flag |
  **segment_id** | **int**| numeric ID of the segment |
- **body** | [**\Swagger\Client\Model\PutDistributionsRequest**](../Model/PutDistributionsRequest.md)| array of distributions |
+ **body** | [**\Justpark\Flagr\Model\PutDistributionsRequest**](../Model/PutDistributionsRequest.md)| array of distributions |
 
 ### Return type
 
-[**\Swagger\Client\Model\Distribution[]**](../Model/Distribution.md)
+[**\Justpark\Flagr\Model\Distribution[]**](../Model/Distribution.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# Swagger\Client\VariantApi
+# Justpark\Flagr\VariantApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **createVariant**
-> \Swagger\Client\Model\Variant createVariant($flag_id, $body)
+> \Justpark\Flagr\Model\Variant createVariant($flag_id, $body)
 
 
 
@@ -20,13 +20,13 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\VariantApi(
+$apiInstance = new Justpark\Flagr\Api\VariantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag
-$body = new \Swagger\Client\Model\CreateVariantRequest(); // \Swagger\Client\Model\CreateVariantRequest | create a variant
+$body = new \Justpark\Flagr\Model\CreateVariantRequest(); // \Justpark\Flagr\Model\CreateVariantRequest | create a variant
 
 try {
     $result = $apiInstance->createVariant($flag_id, $body);
@@ -42,11 +42,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **flag_id** | **int**| numeric ID of the flag |
- **body** | [**\Swagger\Client\Model\CreateVariantRequest**](../Model/CreateVariantRequest.md)| create a variant |
+ **body** | [**\Justpark\Flagr\Model\CreateVariantRequest**](../Model/CreateVariantRequest.md)| create a variant |
 
 ### Return type
 
-[**\Swagger\Client\Model\Variant**](../Model/Variant.md)
+[**\Justpark\Flagr\Model\Variant**](../Model/Variant.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\VariantApi(
+$apiInstance = new Justpark\Flagr\Api\VariantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -108,7 +108,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findVariants**
-> \Swagger\Client\Model\Variant[] findVariants($flag_id)
+> \Justpark\Flagr\Model\Variant[] findVariants($flag_id)
 
 
 
@@ -117,7 +117,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\VariantApi(
+$apiInstance = new Justpark\Flagr\Api\VariantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -141,7 +141,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Variant[]**](../Model/Variant.md)
+[**\Justpark\Flagr\Model\Variant[]**](../Model/Variant.md)
 
 ### Authorization
 
@@ -155,7 +155,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putVariant**
-> \Swagger\Client\Model\Variant putVariant($flag_id, $variant_id, $body)
+> \Justpark\Flagr\Model\Variant putVariant($flag_id, $variant_id, $body)
 
 
 
@@ -164,14 +164,14 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\VariantApi(
+$apiInstance = new Justpark\Flagr\Api\VariantApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag
 $variant_id = 789; // int | numeric ID of the variant
-$body = new \Swagger\Client\Model\PutVariantRequest(); // \Swagger\Client\Model\PutVariantRequest | update a variant
+$body = new \Justpark\Flagr\Model\PutVariantRequest(); // \Justpark\Flagr\Model\PutVariantRequest | update a variant
 
 try {
     $result = $apiInstance->putVariant($flag_id, $variant_id, $body);
@@ -188,11 +188,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **flag_id** | **int**| numeric ID of the flag |
  **variant_id** | **int**| numeric ID of the variant |
- **body** | [**\Swagger\Client\Model\PutVariantRequest**](../Model/PutVariantRequest.md)| update a variant |
+ **body** | [**\Justpark\Flagr\Model\PutVariantRequest**](../Model/PutVariantRequest.md)| update a variant |
 
 ### Return type
 
-[**\Swagger\Client\Model\Variant**](../Model/Variant.md)
+[**\Justpark\Flagr\Model\Variant**](../Model/Variant.md)
 
 ### Authorization
 

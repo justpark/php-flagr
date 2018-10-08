@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Justpark\Flagr\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Justpark\Flagr\ObjectSerializer;
 
 /**
  * Flag Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -61,8 +61,8 @@ class Flag implements ModelInterface, ArrayAccess
         'key' => 'string',
         'description' => 'string',
         'enabled' => 'bool',
-        'segments' => '\Swagger\Client\Model\Segment[]',
-        'variants' => '\Swagger\Client\Model\Variant[]',
+        'segments' => '\Justpark\Flagr\Model\Segment[]',
+        'variants' => '\Justpark\Flagr\Model\Variant[]',
         'data_records_enabled' => 'bool'
     ];
 
@@ -394,7 +394,7 @@ class Flag implements ModelInterface, ArrayAccess
     /**
      * Gets segments
      *
-     * @return \Swagger\Client\Model\Segment[]
+     * @return \Justpark\Flagr\Model\Segment[]
      */
     public function getSegments()
     {
@@ -404,7 +404,7 @@ class Flag implements ModelInterface, ArrayAccess
     /**
      * Sets segments
      *
-     * @param \Swagger\Client\Model\Segment[] $segments segments
+     * @param \Justpark\Flagr\Model\Segment[] $segments segments
      *
      * @return $this
      */
@@ -418,7 +418,7 @@ class Flag implements ModelInterface, ArrayAccess
     /**
      * Gets variants
      *
-     * @return \Swagger\Client\Model\Variant[]
+     * @return \Justpark\Flagr\Model\Variant[]
      */
     public function getVariants()
     {
@@ -428,7 +428,7 @@ class Flag implements ModelInterface, ArrayAccess
     /**
      * Sets variants
      *
-     * @param \Swagger\Client\Model\Variant[] $variants variants
+     * @param \Justpark\Flagr\Model\Variant[] $variants variants
      *
      * @return $this
      */

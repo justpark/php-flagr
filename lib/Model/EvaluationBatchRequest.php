@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Justpark\Flagr\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Justpark\Flagr\ObjectSerializer;
 
 /**
  * EvaluationBatchRequest Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class EvaluationBatchRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'entities' => '\Swagger\Client\Model\EvaluationEntity[]',
+        'entities' => '\Justpark\Flagr\Model\EvaluationEntity[]',
         'enable_debug' => 'bool',
         'flag_i_ds' => 'int[]',
         'flag_keys' => 'string[]'
@@ -232,7 +232,7 @@ class EvaluationBatchRequest implements ModelInterface, ArrayAccess
     /**
      * Gets entities
      *
-     * @return \Swagger\Client\Model\EvaluationEntity[]
+     * @return \Justpark\Flagr\Model\EvaluationEntity[]
      */
     public function getEntities()
     {
@@ -242,7 +242,7 @@ class EvaluationBatchRequest implements ModelInterface, ArrayAccess
     /**
      * Sets entities
      *
-     * @param \Swagger\Client\Model\EvaluationEntity[] $entities entities
+     * @param \Justpark\Flagr\Model\EvaluationEntity[] $entities entities
      *
      * @return $this
      */

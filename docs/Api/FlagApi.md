@@ -1,4 +1,4 @@
-# Swagger\Client\FlagApi
+# Justpark\Flagr\FlagApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -14,7 +14,7 @@ Method | HTTP request | Description
 
 
 # **createFlag**
-> \Swagger\Client\Model\Flag createFlag($body)
+> \Justpark\Flagr\Model\Flag createFlag($body)
 
 
 
@@ -23,12 +23,12 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Swagger\Client\Model\CreateFlagRequest(); // \Swagger\Client\Model\CreateFlagRequest | create a flag
+$body = new \Justpark\Flagr\Model\CreateFlagRequest(); // \Justpark\Flagr\Model\CreateFlagRequest | create a flag
 
 try {
     $result = $apiInstance->createFlag($body);
@@ -43,11 +43,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Swagger\Client\Model\CreateFlagRequest**](../Model/CreateFlagRequest.md)| create a flag |
+ **body** | [**\Justpark\Flagr\Model\CreateFlagRequest**](../Model/CreateFlagRequest.md)| create a flag |
 
 ### Return type
 
-[**\Swagger\Client\Model\Flag**](../Model/Flag.md)
+[**\Justpark\Flagr\Model\Flag**](../Model/Flag.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -107,7 +107,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findFlags**
-> \Swagger\Client\Model\Flag[] findFlags($limit, $enabled, $description, $description_like, $key, $offset)
+> \Justpark\Flagr\Model\Flag[] findFlags($limit, $enabled, $description, $description_like, $key, $offset)
 
 
 
@@ -116,7 +116,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Flag[]**](../Model/Flag.md)
+[**\Justpark\Flagr\Model\Flag[]**](../Model/Flag.md)
 
 ### Authorization
 
@@ -164,7 +164,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFlag**
-> \Swagger\Client\Model\Flag getFlag($flag_id)
+> \Justpark\Flagr\Model\Flag getFlag($flag_id)
 
 
 
@@ -173,7 +173,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -197,7 +197,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\Flag**](../Model/Flag.md)
+[**\Justpark\Flagr\Model\Flag**](../Model/Flag.md)
 
 ### Authorization
 
@@ -211,7 +211,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getFlagSnapshots**
-> \Swagger\Client\Model\FlagSnapshot[] getFlagSnapshots($flag_id)
+> \Justpark\Flagr\Model\FlagSnapshot[] getFlagSnapshots($flag_id)
 
 
 
@@ -220,7 +220,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -244,7 +244,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Swagger\Client\Model\FlagSnapshot[]**](../Model/FlagSnapshot.md)
+[**\Justpark\Flagr\Model\FlagSnapshot[]**](../Model/FlagSnapshot.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putFlag**
-> \Swagger\Client\Model\Flag putFlag($flag_id, $body)
+> \Justpark\Flagr\Model\Flag putFlag($flag_id, $body)
 
 
 
@@ -267,13 +267,13 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag to get
-$body = new \Swagger\Client\Model\PutFlagRequest(); // \Swagger\Client\Model\PutFlagRequest | update a flag
+$body = new \Justpark\Flagr\Model\PutFlagRequest(); // \Justpark\Flagr\Model\PutFlagRequest | update a flag
 
 try {
     $result = $apiInstance->putFlag($flag_id, $body);
@@ -289,11 +289,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **flag_id** | **int**| numeric ID of the flag to get |
- **body** | [**\Swagger\Client\Model\PutFlagRequest**](../Model/PutFlagRequest.md)| update a flag |
+ **body** | [**\Justpark\Flagr\Model\PutFlagRequest**](../Model/PutFlagRequest.md)| update a flag |
 
 ### Return type
 
-[**\Swagger\Client\Model\Flag**](../Model/Flag.md)
+[**\Justpark\Flagr\Model\Flag**](../Model/Flag.md)
 
 ### Authorization
 
@@ -307,7 +307,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **setFlagEnabled**
-> \Swagger\Client\Model\Flag setFlagEnabled($flag_id, $body)
+> \Justpark\Flagr\Model\Flag setFlagEnabled($flag_id, $body)
 
 
 
@@ -316,13 +316,13 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Swagger\Client\Api\FlagApi(
+$apiInstance = new Justpark\Flagr\Api\FlagApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag to get
-$body = new \Swagger\Client\Model\SetFlagEnabledRequest(); // \Swagger\Client\Model\SetFlagEnabledRequest | set flag enabled state
+$body = new \Justpark\Flagr\Model\SetFlagEnabledRequest(); // \Justpark\Flagr\Model\SetFlagEnabledRequest | set flag enabled state
 
 try {
     $result = $apiInstance->setFlagEnabled($flag_id, $body);
@@ -338,11 +338,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **flag_id** | **int**| numeric ID of the flag to get |
- **body** | [**\Swagger\Client\Model\SetFlagEnabledRequest**](../Model/SetFlagEnabledRequest.md)| set flag enabled state |
+ **body** | [**\Justpark\Flagr\Model\SetFlagEnabledRequest**](../Model/SetFlagEnabledRequest.md)| set flag enabled state |
 
 ### Return type
 
-[**\Swagger\Client\Model\Flag**](../Model/Flag.md)
+[**\Justpark\Flagr\Model\Flag**](../Model/Flag.md)
 
 ### Authorization
 

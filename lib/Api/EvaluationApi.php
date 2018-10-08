@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Api;
+namespace Justpark\Flagr\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Swagger\Client\ApiException;
-use Swagger\Client\Configuration;
-use Swagger\Client\HeaderSelector;
-use Swagger\Client\ObjectSerializer;
+use Justpark\Flagr\ApiException;
+use Justpark\Flagr\Configuration;
+use Justpark\Flagr\HeaderSelector;
+use Justpark\Flagr\ObjectSerializer;
 
 /**
  * EvaluationApi Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -85,11 +85,11 @@ class EvaluationApi
     /**
      * Operation postEvaluation
      *
-     * @param  \Swagger\Client\Model\EvalContext $body evalution context (required)
+     * @param  \Justpark\Flagr\Model\EvalContext $body evalution context (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EvalResult
+     * @return \Justpark\Flagr\Model\EvalResult
      */
     public function postEvaluation($body)
     {
@@ -100,15 +100,15 @@ class EvaluationApi
     /**
      * Operation postEvaluationWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\EvalContext $body evalution context (required)
+     * @param  \Justpark\Flagr\Model\EvalContext $body evalution context (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EvalResult, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Justpark\Flagr\Model\EvalResult, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEvaluationWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\EvalResult';
+        $returnType = '\Justpark\Flagr\Model\EvalResult';
         $request = $this->postEvaluationRequest($body);
 
         try {
@@ -160,7 +160,7 @@ class EvaluationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EvalResult',
+                        '\Justpark\Flagr\Model\EvalResult',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -168,7 +168,7 @@ class EvaluationApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -183,7 +183,7 @@ class EvaluationApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\EvalContext $body evalution context (required)
+     * @param  \Justpark\Flagr\Model\EvalContext $body evalution context (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -203,14 +203,14 @@ class EvaluationApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\EvalContext $body evalution context (required)
+     * @param  \Justpark\Flagr\Model\EvalContext $body evalution context (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEvaluationAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\EvalResult';
+        $returnType = '\Justpark\Flagr\Model\EvalResult';
         $request = $this->postEvaluationRequest($body);
 
         return $this->client
@@ -253,7 +253,7 @@ class EvaluationApi
     /**
      * Create request for operation 'postEvaluation'
      *
-     * @param  \Swagger\Client\Model\EvalContext $body evalution context (required)
+     * @param  \Justpark\Flagr\Model\EvalContext $body evalution context (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -346,11 +346,11 @@ class EvaluationApi
     /**
      * Operation postEvaluationBatch
      *
-     * @param  \Swagger\Client\Model\EvaluationBatchRequest $body evalution batch request (required)
+     * @param  \Justpark\Flagr\Model\EvaluationBatchRequest $body evalution batch request (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Swagger\Client\Model\EvaluationBatchResponse
+     * @return \Justpark\Flagr\Model\EvaluationBatchResponse
      */
     public function postEvaluationBatch($body)
     {
@@ -361,15 +361,15 @@ class EvaluationApi
     /**
      * Operation postEvaluationBatchWithHttpInfo
      *
-     * @param  \Swagger\Client\Model\EvaluationBatchRequest $body evalution batch request (required)
+     * @param  \Justpark\Flagr\Model\EvaluationBatchRequest $body evalution batch request (required)
      *
-     * @throws \Swagger\Client\ApiException on non-2xx response
+     * @throws \Justpark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Swagger\Client\Model\EvaluationBatchResponse, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Justpark\Flagr\Model\EvaluationBatchResponse, HTTP status code, HTTP response headers (array of strings)
      */
     public function postEvaluationBatchWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\EvaluationBatchResponse';
+        $returnType = '\Justpark\Flagr\Model\EvaluationBatchResponse';
         $request = $this->postEvaluationBatchRequest($body);
 
         try {
@@ -421,7 +421,7 @@ class EvaluationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\EvaluationBatchResponse',
+                        '\Justpark\Flagr\Model\EvaluationBatchResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -429,7 +429,7 @@ class EvaluationApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Swagger\Client\Model\Error',
+                        '\Justpark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -444,7 +444,7 @@ class EvaluationApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\EvaluationBatchRequest $body evalution batch request (required)
+     * @param  \Justpark\Flagr\Model\EvaluationBatchRequest $body evalution batch request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -464,14 +464,14 @@ class EvaluationApi
      *
      * 
      *
-     * @param  \Swagger\Client\Model\EvaluationBatchRequest $body evalution batch request (required)
+     * @param  \Justpark\Flagr\Model\EvaluationBatchRequest $body evalution batch request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function postEvaluationBatchAsyncWithHttpInfo($body)
     {
-        $returnType = '\Swagger\Client\Model\EvaluationBatchResponse';
+        $returnType = '\Justpark\Flagr\Model\EvaluationBatchResponse';
         $request = $this->postEvaluationBatchRequest($body);
 
         return $this->client
@@ -514,7 +514,7 @@ class EvaluationApi
     /**
      * Create request for operation 'postEvaluationBatch'
      *
-     * @param  \Swagger\Client\Model\EvaluationBatchRequest $body evalution batch request (required)
+     * @param  \Justpark\Flagr\Model\EvaluationBatchRequest $body evalution batch request (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

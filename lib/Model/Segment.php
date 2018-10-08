@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Swagger\Client\Model;
+namespace Justpark\Flagr\Model;
 
 use \ArrayAccess;
-use \Swagger\Client\ObjectSerializer;
+use \Justpark\Flagr\ObjectSerializer;
 
 /**
  * Segment Class Doc Comment
  *
  * @category Class
- * @package  Swagger\Client
+ * @package  Justpark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,8 +59,8 @@ class Segment implements ModelInterface, ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'description' => 'string',
-        'constraints' => '\Swagger\Client\Model\Constraint[]',
-        'distributions' => '\Swagger\Client\Model\Distribution[]',
+        'constraints' => '\Justpark\Flagr\Model\Constraint[]',
+        'distributions' => '\Justpark\Flagr\Model\Distribution[]',
         'rank' => 'int',
         'rollout_percent' => 'int'
     ];
@@ -349,7 +349,7 @@ class Segment implements ModelInterface, ArrayAccess
     /**
      * Gets constraints
      *
-     * @return \Swagger\Client\Model\Constraint[]
+     * @return \Justpark\Flagr\Model\Constraint[]
      */
     public function getConstraints()
     {
@@ -359,7 +359,7 @@ class Segment implements ModelInterface, ArrayAccess
     /**
      * Sets constraints
      *
-     * @param \Swagger\Client\Model\Constraint[] $constraints constraints
+     * @param \Justpark\Flagr\Model\Constraint[] $constraints constraints
      *
      * @return $this
      */
@@ -373,7 +373,7 @@ class Segment implements ModelInterface, ArrayAccess
     /**
      * Gets distributions
      *
-     * @return \Swagger\Client\Model\Distribution[]
+     * @return \Justpark\Flagr\Model\Distribution[]
      */
     public function getDistributions()
     {
@@ -383,7 +383,7 @@ class Segment implements ModelInterface, ArrayAccess
     /**
      * Sets distributions
      *
-     * @param \Swagger\Client\Model\Distribution[] $distributions distributions
+     * @param \Justpark\Flagr\Model\Distribution[] $distributions distributions
      *
      * @return $this
      */
