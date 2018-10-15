@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **id** | **int** |  | [optional] 
 **description** | **string** |  | 
-**constraints** | [**\Justpark\Flagr\Model\Constraint[]**](Constraint.md) |  | [optional] 
-**distributions** | [**\Justpark\Flagr\Model\Distribution[]**](Distribution.md) |  | [optional] 
+**constraints** | [**\JustPark\Flagr\Model\Constraint[]**](Constraint.md) |  | [optional] 
+**distributions** | [**\JustPark\Flagr\Model\Distribution[]**](Distribution.md) |  | [optional] 
 **rank** | **int** |  | 
 **rollout_percent** | **int** |  | 
 

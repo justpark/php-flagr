@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr;
+namespace JustPark\Flagr;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -393,7 +393,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Justpark\Flagr) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (JustPark\Flagr) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 1.0.10' . PHP_EOL;

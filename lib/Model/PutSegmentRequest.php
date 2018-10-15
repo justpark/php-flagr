@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Model;
+namespace JustPark\Flagr\Model;
 
 use \ArrayAccess;
-use \Justpark\Flagr\ObjectSerializer;
+use \JustPark\Flagr\ObjectSerializer;
 
 /**
  * PutSegmentRequest Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */

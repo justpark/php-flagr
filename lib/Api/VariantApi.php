@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Api;
+namespace JustPark\Flagr\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Justpark\Flagr\ApiException;
-use Justpark\Flagr\Configuration;
-use Justpark\Flagr\HeaderSelector;
-use Justpark\Flagr\ObjectSerializer;
+use JustPark\Flagr\ApiException;
+use JustPark\Flagr\Configuration;
+use JustPark\Flagr\HeaderSelector;
+use JustPark\Flagr\ObjectSerializer;
 
 /**
  * VariantApi Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -86,11 +86,11 @@ class VariantApi
      * Operation createVariant
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Justpark\Flagr\Model\CreateVariantRequest $body create a variant (required)
+     * @param  \JustPark\Flagr\Model\CreateVariantRequest $body create a variant (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Variant
+     * @return \JustPark\Flagr\Model\Variant
      */
     public function createVariant($flag_id, $body)
     {
@@ -102,15 +102,15 @@ class VariantApi
      * Operation createVariantWithHttpInfo
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Justpark\Flagr\Model\CreateVariantRequest $body create a variant (required)
+     * @param  \JustPark\Flagr\Model\CreateVariantRequest $body create a variant (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Variant, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Variant, HTTP status code, HTTP response headers (array of strings)
      */
     public function createVariantWithHttpInfo($flag_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Variant';
+        $returnType = '\JustPark\Flagr\Model\Variant';
         $request = $this->createVariantRequest($flag_id, $body);
 
         try {
@@ -162,7 +162,7 @@ class VariantApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Variant',
+                        '\JustPark\Flagr\Model\Variant',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -170,7 +170,7 @@ class VariantApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -186,7 +186,7 @@ class VariantApi
      * 
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Justpark\Flagr\Model\CreateVariantRequest $body create a variant (required)
+     * @param  \JustPark\Flagr\Model\CreateVariantRequest $body create a variant (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -207,14 +207,14 @@ class VariantApi
      * 
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Justpark\Flagr\Model\CreateVariantRequest $body create a variant (required)
+     * @param  \JustPark\Flagr\Model\CreateVariantRequest $body create a variant (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createVariantAsyncWithHttpInfo($flag_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Variant';
+        $returnType = '\JustPark\Flagr\Model\Variant';
         $request = $this->createVariantRequest($flag_id, $body);
 
         return $this->client
@@ -258,7 +258,7 @@ class VariantApi
      * Create request for operation 'createVariant'
      *
      * @param  int $flag_id numeric ID of the flag (required)
-     * @param  \Justpark\Flagr\Model\CreateVariantRequest $body create a variant (required)
+     * @param  \JustPark\Flagr\Model\CreateVariantRequest $body create a variant (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -372,7 +372,7 @@ class VariantApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -387,7 +387,7 @@ class VariantApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -431,7 +431,7 @@ class VariantApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -627,9 +627,9 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Variant[]
+     * @return \JustPark\Flagr\Model\Variant[]
      */
     public function findVariants($flag_id)
     {
@@ -642,13 +642,13 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Variant[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Variant[], HTTP status code, HTTP response headers (array of strings)
      */
     public function findVariantsWithHttpInfo($flag_id)
     {
-        $returnType = '\Justpark\Flagr\Model\Variant[]';
+        $returnType = '\JustPark\Flagr\Model\Variant[]';
         $request = $this->findVariantsRequest($flag_id);
 
         try {
@@ -700,7 +700,7 @@ class VariantApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Variant[]',
+                        '\JustPark\Flagr\Model\Variant[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -708,7 +708,7 @@ class VariantApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -750,7 +750,7 @@ class VariantApi
      */
     public function findVariantsAsyncWithHttpInfo($flag_id)
     {
-        $returnType = '\Justpark\Flagr\Model\Variant[]';
+        $returnType = '\JustPark\Flagr\Model\Variant[]';
         $request = $this->findVariantsRequest($flag_id);
 
         return $this->client
@@ -897,11 +897,11 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
-     * @param  \Justpark\Flagr\Model\PutVariantRequest $body update a variant (required)
+     * @param  \JustPark\Flagr\Model\PutVariantRequest $body update a variant (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Variant
+     * @return \JustPark\Flagr\Model\Variant
      */
     public function putVariant($flag_id, $variant_id, $body)
     {
@@ -914,15 +914,15 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
-     * @param  \Justpark\Flagr\Model\PutVariantRequest $body update a variant (required)
+     * @param  \JustPark\Flagr\Model\PutVariantRequest $body update a variant (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Variant, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Variant, HTTP status code, HTTP response headers (array of strings)
      */
     public function putVariantWithHttpInfo($flag_id, $variant_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Variant';
+        $returnType = '\JustPark\Flagr\Model\Variant';
         $request = $this->putVariantRequest($flag_id, $variant_id, $body);
 
         try {
@@ -974,7 +974,7 @@ class VariantApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Variant',
+                        '\JustPark\Flagr\Model\Variant',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -982,7 +982,7 @@ class VariantApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
-     * @param  \Justpark\Flagr\Model\PutVariantRequest $body update a variant (required)
+     * @param  \JustPark\Flagr\Model\PutVariantRequest $body update a variant (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1021,14 +1021,14 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
-     * @param  \Justpark\Flagr\Model\PutVariantRequest $body update a variant (required)
+     * @param  \JustPark\Flagr\Model\PutVariantRequest $body update a variant (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putVariantAsyncWithHttpInfo($flag_id, $variant_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Variant';
+        $returnType = '\JustPark\Flagr\Model\Variant';
         $request = $this->putVariantRequest($flag_id, $variant_id, $body);
 
         return $this->client
@@ -1073,7 +1073,7 @@ class VariantApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $variant_id numeric ID of the variant (required)
-     * @param  \Justpark\Flagr\Model\PutVariantRequest $body update a variant (required)
+     * @param  \JustPark\Flagr\Model\PutVariantRequest $body update a variant (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

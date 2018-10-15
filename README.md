@@ -57,14 +57,14 @@ Please follow the [installation procedure](#installation--usage) and then run th
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\ConstraintApi(
+$apiInstance = new JustPark\Flagr\Api\ConstraintApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag
 $segment_id = 789; // int | numeric ID of the segment
-$body = new \Justpark\Flagr\Model\CreateConstraintRequest(); // \Justpark\Flagr\Model\CreateConstraintRequest | create a constraint
+$body = new \JustPark\Flagr\Model\CreateConstraintRequest(); // \JustPark\Flagr\Model\CreateConstraintRequest | create a constraint
 
 try {
     $result = $apiInstance->createConstraint($flag_id, $segment_id, $body);

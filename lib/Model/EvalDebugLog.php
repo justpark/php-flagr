@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Model;
+namespace JustPark\Flagr\Model;
 
 use \ArrayAccess;
-use \Justpark\Flagr\ObjectSerializer;
+use \JustPark\Flagr\ObjectSerializer;
 
 /**
  * EvalDebugLog Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class EvalDebugLog implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'segment_debug_logs' => '\Justpark\Flagr\Model\SegmentDebugLog[]',
+        'segment_debug_logs' => '\JustPark\Flagr\Model\SegmentDebugLog[]',
         'msg' => 'string'
     ];
 
@@ -214,7 +214,7 @@ class EvalDebugLog implements ModelInterface, ArrayAccess
     /**
      * Gets segment_debug_logs
      *
-     * @return \Justpark\Flagr\Model\SegmentDebugLog[]
+     * @return \JustPark\Flagr\Model\SegmentDebugLog[]
      */
     public function getSegmentDebugLogs()
     {
@@ -224,7 +224,7 @@ class EvalDebugLog implements ModelInterface, ArrayAccess
     /**
      * Sets segment_debug_logs
      *
-     * @param \Justpark\Flagr\Model\SegmentDebugLog[] $segment_debug_logs segment_debug_logs
+     * @param \JustPark\Flagr\Model\SegmentDebugLog[] $segment_debug_logs segment_debug_logs
      *
      * @return $this
      */

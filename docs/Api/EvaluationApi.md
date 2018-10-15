@@ -1,4 +1,4 @@
-# Justpark\Flagr\EvaluationApi
+# JustPark\Flagr\EvaluationApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **postEvaluation**
-> \Justpark\Flagr\Model\EvalResult postEvaluation($body)
+> \JustPark\Flagr\Model\EvalResult postEvaluation($body)
 
 
 
@@ -18,12 +18,12 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\EvaluationApi(
+$apiInstance = new JustPark\Flagr\Api\EvaluationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Justpark\Flagr\Model\EvalContext(); // \Justpark\Flagr\Model\EvalContext | evalution context
+$body = new \JustPark\Flagr\Model\EvalContext(); // \JustPark\Flagr\Model\EvalContext | evalution context
 
 try {
     $result = $apiInstance->postEvaluation($body);
@@ -38,11 +38,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Justpark\Flagr\Model\EvalContext**](../Model/EvalContext.md)| evalution context |
+ **body** | [**\JustPark\Flagr\Model\EvalContext**](../Model/EvalContext.md)| evalution context |
 
 ### Return type
 
-[**\Justpark\Flagr\Model\EvalResult**](../Model/EvalResult.md)
+[**\JustPark\Flagr\Model\EvalResult**](../Model/EvalResult.md)
 
 ### Authorization
 
@@ -56,7 +56,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **postEvaluationBatch**
-> \Justpark\Flagr\Model\EvaluationBatchResponse postEvaluationBatch($body)
+> \JustPark\Flagr\Model\EvaluationBatchResponse postEvaluationBatch($body)
 
 
 
@@ -65,12 +65,12 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\EvaluationApi(
+$apiInstance = new JustPark\Flagr\Api\EvaluationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$body = new \Justpark\Flagr\Model\EvaluationBatchRequest(); // \Justpark\Flagr\Model\EvaluationBatchRequest | evalution batch request
+$body = new \JustPark\Flagr\Model\EvaluationBatchRequest(); // \JustPark\Flagr\Model\EvaluationBatchRequest | evalution batch request
 
 try {
     $result = $apiInstance->postEvaluationBatch($body);
@@ -85,11 +85,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | [**\Justpark\Flagr\Model\EvaluationBatchRequest**](../Model/EvaluationBatchRequest.md)| evalution batch request |
+ **body** | [**\JustPark\Flagr\Model\EvaluationBatchRequest**](../Model/EvaluationBatchRequest.md)| evalution batch request |
 
 ### Return type
 
-[**\Justpark\Flagr\Model\EvaluationBatchResponse**](../Model/EvaluationBatchResponse.md)
+[**\JustPark\Flagr\Model\EvaluationBatchResponse**](../Model/EvaluationBatchResponse.md)
 
 ### Authorization
 

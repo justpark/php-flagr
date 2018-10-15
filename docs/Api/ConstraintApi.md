@@ -1,4 +1,4 @@
-# Justpark\Flagr\ConstraintApi
+# JustPark\Flagr\ConstraintApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **createConstraint**
-> \Justpark\Flagr\Model\Constraint createConstraint($flag_id, $segment_id, $body)
+> \JustPark\Flagr\Model\Constraint createConstraint($flag_id, $segment_id, $body)
 
 
 
@@ -20,14 +20,14 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\ConstraintApi(
+$apiInstance = new JustPark\Flagr\Api\ConstraintApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $flag_id = 789; // int | numeric ID of the flag
 $segment_id = 789; // int | numeric ID of the segment
-$body = new \Justpark\Flagr\Model\CreateConstraintRequest(); // \Justpark\Flagr\Model\CreateConstraintRequest | create a constraint
+$body = new \JustPark\Flagr\Model\CreateConstraintRequest(); // \JustPark\Flagr\Model\CreateConstraintRequest | create a constraint
 
 try {
     $result = $apiInstance->createConstraint($flag_id, $segment_id, $body);
@@ -44,11 +44,11 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **flag_id** | **int**| numeric ID of the flag |
  **segment_id** | **int**| numeric ID of the segment |
- **body** | [**\Justpark\Flagr\Model\CreateConstraintRequest**](../Model/CreateConstraintRequest.md)| create a constraint |
+ **body** | [**\JustPark\Flagr\Model\CreateConstraintRequest**](../Model/CreateConstraintRequest.md)| create a constraint |
 
 ### Return type
 
-[**\Justpark\Flagr\Model\Constraint**](../Model/Constraint.md)
+[**\JustPark\Flagr\Model\Constraint**](../Model/Constraint.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\ConstraintApi(
+$apiInstance = new JustPark\Flagr\Api\ConstraintApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -112,7 +112,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **findConstraints**
-> \Justpark\Flagr\Model\Constraint[] findConstraints($flag_id, $segment_id)
+> \JustPark\Flagr\Model\Constraint[] findConstraints($flag_id, $segment_id)
 
 
 
@@ -121,7 +121,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\ConstraintApi(
+$apiInstance = new JustPark\Flagr\Api\ConstraintApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -147,7 +147,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Justpark\Flagr\Model\Constraint[]**](../Model/Constraint.md)
+[**\JustPark\Flagr\Model\Constraint[]**](../Model/Constraint.md)
 
 ### Authorization
 
@@ -161,7 +161,7 @@ No authorization required
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **putConstraint**
-> \Justpark\Flagr\Model\Constraint putConstraint($flag_id, $segment_id, $constraint_id, $body)
+> \JustPark\Flagr\Model\Constraint putConstraint($flag_id, $segment_id, $constraint_id, $body)
 
 
 
@@ -170,7 +170,7 @@ No authorization required
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\ConstraintApi(
+$apiInstance = new JustPark\Flagr\Api\ConstraintApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -178,7 +178,7 @@ $apiInstance = new Justpark\Flagr\Api\ConstraintApi(
 $flag_id = 789; // int | numeric ID of the flag
 $segment_id = 789; // int | numeric ID of the segment
 $constraint_id = 789; // int | numeric ID of the constraint
-$body = new \Justpark\Flagr\Model\CreateConstraintRequest(); // \Justpark\Flagr\Model\CreateConstraintRequest | create a constraint
+$body = new \JustPark\Flagr\Model\CreateConstraintRequest(); // \JustPark\Flagr\Model\CreateConstraintRequest | create a constraint
 
 try {
     $result = $apiInstance->putConstraint($flag_id, $segment_id, $constraint_id, $body);
@@ -196,11 +196,11 @@ Name | Type | Description  | Notes
  **flag_id** | **int**| numeric ID of the flag |
  **segment_id** | **int**| numeric ID of the segment |
  **constraint_id** | **int**| numeric ID of the constraint |
- **body** | [**\Justpark\Flagr\Model\CreateConstraintRequest**](../Model/CreateConstraintRequest.md)| create a constraint |
+ **body** | [**\JustPark\Flagr\Model\CreateConstraintRequest**](../Model/CreateConstraintRequest.md)| create a constraint |
 
 ### Return type
 
-[**\Justpark\Flagr\Model\Constraint**](../Model/Constraint.md)
+[**\JustPark\Flagr\Model\Constraint**](../Model/Constraint.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Api;
+namespace JustPark\Flagr\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Justpark\Flagr\ApiException;
-use Justpark\Flagr\Configuration;
-use Justpark\Flagr\HeaderSelector;
-use Justpark\Flagr\ObjectSerializer;
+use JustPark\Flagr\ApiException;
+use JustPark\Flagr\Configuration;
+use JustPark\Flagr\HeaderSelector;
+use JustPark\Flagr\ObjectSerializer;
 
 /**
  * ConstraintApi Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -87,11 +87,11 @@ class ConstraintApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Constraint
+     * @return \JustPark\Flagr\Model\Constraint
      */
     public function createConstraint($flag_id, $segment_id, $body)
     {
@@ -104,15 +104,15 @@ class ConstraintApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Constraint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Constraint, HTTP status code, HTTP response headers (array of strings)
      */
     public function createConstraintWithHttpInfo($flag_id, $segment_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Constraint';
+        $returnType = '\JustPark\Flagr\Model\Constraint';
         $request = $this->createConstraintRequest($flag_id, $segment_id, $body);
 
         try {
@@ -164,7 +164,7 @@ class ConstraintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Constraint',
+                        '\JustPark\Flagr\Model\Constraint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -172,7 +172,7 @@ class ConstraintApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -189,7 +189,7 @@ class ConstraintApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -211,14 +211,14 @@ class ConstraintApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function createConstraintAsyncWithHttpInfo($flag_id, $segment_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Constraint';
+        $returnType = '\JustPark\Flagr\Model\Constraint';
         $request = $this->createConstraintRequest($flag_id, $segment_id, $body);
 
         return $this->client
@@ -263,7 +263,7 @@ class ConstraintApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -396,7 +396,7 @@ class ConstraintApi
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -412,7 +412,7 @@ class ConstraintApi
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -456,7 +456,7 @@ class ConstraintApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -674,9 +674,9 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Constraint[]
+     * @return \JustPark\Flagr\Model\Constraint[]
      */
     public function findConstraints($flag_id, $segment_id)
     {
@@ -690,13 +690,13 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Constraint[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Constraint[], HTTP status code, HTTP response headers (array of strings)
      */
     public function findConstraintsWithHttpInfo($flag_id, $segment_id)
     {
-        $returnType = '\Justpark\Flagr\Model\Constraint[]';
+        $returnType = '\JustPark\Flagr\Model\Constraint[]';
         $request = $this->findConstraintsRequest($flag_id, $segment_id);
 
         try {
@@ -748,7 +748,7 @@ class ConstraintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Constraint[]',
+                        '\JustPark\Flagr\Model\Constraint[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -756,7 +756,7 @@ class ConstraintApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -800,7 +800,7 @@ class ConstraintApi
      */
     public function findConstraintsAsyncWithHttpInfo($flag_id, $segment_id)
     {
-        $returnType = '\Justpark\Flagr\Model\Constraint[]';
+        $returnType = '\JustPark\Flagr\Model\Constraint[]';
         $request = $this->findConstraintsRequest($flag_id, $segment_id);
 
         return $this->client
@@ -967,11 +967,11 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Constraint
+     * @return \JustPark\Flagr\Model\Constraint
      */
     public function putConstraint($flag_id, $segment_id, $constraint_id, $body)
     {
@@ -985,15 +985,15 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Constraint, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Constraint, HTTP status code, HTTP response headers (array of strings)
      */
     public function putConstraintWithHttpInfo($flag_id, $segment_id, $constraint_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Constraint';
+        $returnType = '\JustPark\Flagr\Model\Constraint';
         $request = $this->putConstraintRequest($flag_id, $segment_id, $constraint_id, $body);
 
         try {
@@ -1045,7 +1045,7 @@ class ConstraintApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Constraint',
+                        '\JustPark\Flagr\Model\Constraint',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1053,7 +1053,7 @@ class ConstraintApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1071,7 +1071,7 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1094,14 +1094,14 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putConstraintAsyncWithHttpInfo($flag_id, $segment_id, $constraint_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Constraint';
+        $returnType = '\JustPark\Flagr\Model\Constraint';
         $request = $this->putConstraintRequest($flag_id, $segment_id, $constraint_id, $body);
 
         return $this->client
@@ -1147,7 +1147,7 @@ class ConstraintApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      * @param  int $constraint_id numeric ID of the constraint (required)
-     * @param  \Justpark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
+     * @param  \JustPark\Flagr\Model\CreateConstraintRequest $body create a constraint (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

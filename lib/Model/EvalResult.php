@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Model;
+namespace JustPark\Flagr\Model;
 
 use \ArrayAccess;
-use \Justpark\Flagr\ObjectSerializer;
+use \JustPark\Flagr\ObjectSerializer;
 
 /**
  * EvalResult Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -64,9 +64,9 @@ class EvalResult implements ModelInterface, ArrayAccess
         'variant_id' => 'int',
         'variant_key' => 'string',
         'variant_attachment' => 'object',
-        'eval_context' => '\Justpark\Flagr\Model\EvalContext',
+        'eval_context' => '\JustPark\Flagr\Model\EvalContext',
         'timestamp' => 'string',
-        'eval_debug_log' => '\Justpark\Flagr\Model\EvalDebugLog'
+        'eval_debug_log' => '\JustPark\Flagr\Model\EvalDebugLog'
     ];
 
     /**
@@ -533,7 +533,7 @@ class EvalResult implements ModelInterface, ArrayAccess
     /**
      * Gets eval_context
      *
-     * @return \Justpark\Flagr\Model\EvalContext
+     * @return \JustPark\Flagr\Model\EvalContext
      */
     public function getEvalContext()
     {
@@ -543,7 +543,7 @@ class EvalResult implements ModelInterface, ArrayAccess
     /**
      * Sets eval_context
      *
-     * @param \Justpark\Flagr\Model\EvalContext $eval_context eval_context
+     * @param \JustPark\Flagr\Model\EvalContext $eval_context eval_context
      *
      * @return $this
      */
@@ -586,7 +586,7 @@ class EvalResult implements ModelInterface, ArrayAccess
     /**
      * Gets eval_debug_log
      *
-     * @return \Justpark\Flagr\Model\EvalDebugLog
+     * @return \JustPark\Flagr\Model\EvalDebugLog
      */
     public function getEvalDebugLog()
     {
@@ -596,7 +596,7 @@ class EvalResult implements ModelInterface, ArrayAccess
     /**
      * Sets eval_debug_log
      *
-     * @param \Justpark\Flagr\Model\EvalDebugLog $eval_debug_log eval_debug_log
+     * @param \JustPark\Flagr\Model\EvalDebugLog $eval_debug_log eval_debug_log
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Api;
+namespace JustPark\Flagr\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Justpark\Flagr\ApiException;
-use Justpark\Flagr\Configuration;
-use Justpark\Flagr\HeaderSelector;
-use Justpark\Flagr\ObjectSerializer;
+use JustPark\Flagr\ApiException;
+use JustPark\Flagr\Configuration;
+use JustPark\Flagr\HeaderSelector;
+use JustPark\Flagr\ObjectSerializer;
 
 /**
  * DistributionApi Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -88,9 +88,9 @@ class DistributionApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Distribution[]
+     * @return \JustPark\Flagr\Model\Distribution[]
      */
     public function findDistributions($flag_id, $segment_id)
     {
@@ -104,13 +104,13 @@ class DistributionApi
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Distribution[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Distribution[], HTTP status code, HTTP response headers (array of strings)
      */
     public function findDistributionsWithHttpInfo($flag_id, $segment_id)
     {
-        $returnType = '\Justpark\Flagr\Model\Distribution[]';
+        $returnType = '\JustPark\Flagr\Model\Distribution[]';
         $request = $this->findDistributionsRequest($flag_id, $segment_id);
 
         try {
@@ -162,7 +162,7 @@ class DistributionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Distribution[]',
+                        '\JustPark\Flagr\Model\Distribution[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -170,7 +170,7 @@ class DistributionApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class DistributionApi
      */
     public function findDistributionsAsyncWithHttpInfo($flag_id, $segment_id)
     {
-        $returnType = '\Justpark\Flagr\Model\Distribution[]';
+        $returnType = '\JustPark\Flagr\Model\Distribution[]';
         $request = $this->findDistributionsRequest($flag_id, $segment_id);
 
         return $this->client
@@ -380,11 +380,11 @@ class DistributionApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
+     * @param  \JustPark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Justpark\Flagr\Model\Distribution[]
+     * @return \JustPark\Flagr\Model\Distribution[]
      */
     public function putDistributions($flag_id, $segment_id, $body)
     {
@@ -397,15 +397,15 @@ class DistributionApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
+     * @param  \JustPark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Justpark\Flagr\Model\Distribution[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \JustPark\Flagr\Model\Distribution[], HTTP status code, HTTP response headers (array of strings)
      */
     public function putDistributionsWithHttpInfo($flag_id, $segment_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Distribution[]';
+        $returnType = '\JustPark\Flagr\Model\Distribution[]';
         $request = $this->putDistributionsRequest($flag_id, $segment_id, $body);
 
         try {
@@ -457,7 +457,7 @@ class DistributionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Distribution[]',
+                        '\JustPark\Flagr\Model\Distribution[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -465,7 +465,7 @@ class DistributionApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -482,7 +482,7 @@ class DistributionApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
+     * @param  \JustPark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -504,14 +504,14 @@ class DistributionApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
+     * @param  \JustPark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
     public function putDistributionsAsyncWithHttpInfo($flag_id, $segment_id, $body)
     {
-        $returnType = '\Justpark\Flagr\Model\Distribution[]';
+        $returnType = '\JustPark\Flagr\Model\Distribution[]';
         $request = $this->putDistributionsRequest($flag_id, $segment_id, $body);
 
         return $this->client
@@ -556,7 +556,7 @@ class DistributionApi
      *
      * @param  int $flag_id numeric ID of the flag (required)
      * @param  int $segment_id numeric ID of the segment (required)
-     * @param  \Justpark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
+     * @param  \JustPark\Flagr\Model\PutDistributionsRequest $body array of distributions (required)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,7 +27,7 @@
  * Please update the test case below to test the model.
  */
 
-namespace Justpark\Flagr;
+namespace JustPark\Flagr;
 
 /**
  * FlagTest Class Doc Comment
@@ -35,7 +35,7 @@ namespace Justpark\Flagr;
  * @category    Class */
 // * @description Flag
 /**
- * @package     Justpark\Flagr
+ * @package     JustPark\Flagr
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */

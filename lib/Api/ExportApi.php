@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Api;
+namespace JustPark\Flagr\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Justpark\Flagr\ApiException;
-use Justpark\Flagr\Configuration;
-use Justpark\Flagr\HeaderSelector;
-use Justpark\Flagr\ObjectSerializer;
+use JustPark\Flagr\ApiException;
+use JustPark\Flagr\Configuration;
+use JustPark\Flagr\HeaderSelector;
+use JustPark\Flagr\ObjectSerializer;
 
 /**
  * ExportApi Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -86,7 +86,7 @@ class ExportApi
      * Operation getExportSQLite
      *
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -100,7 +100,7 @@ class ExportApi
      * Operation getExportSQLiteWithHttpInfo
      *
      *
-     * @throws \Justpark\Flagr\ApiException on non-2xx response
+     * @throws \JustPark\Flagr\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -166,7 +166,7 @@ class ExportApi
                 default:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Justpark\Flagr\Model\Error',
+                        '\JustPark\Flagr\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

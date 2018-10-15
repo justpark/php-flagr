@@ -1,4 +1,4 @@
-# Justpark\Flagr\ExportApi
+# JustPark\Flagr\ExportApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -19,7 +19,7 @@ Export sqlite3 format of the db dump, which is converted from the main database.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\ExportApi(
+$apiInstance = new JustPark\Flagr\Api\ExportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

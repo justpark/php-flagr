@@ -29,9 +29,9 @@
         "friendsofphp/php-cs-fixer": "~1.12"
     },
     "autoload": {
-        "psr-4": { "Justpark\\Flagr\\" : "lib/" }
+        "psr-4": { "JustPark\\Flagr\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "Justpark\\Flagr\\" : "test/" }
+        "psr-4": { "JustPark\\Flagr\\" : "test/" }
     }
 }

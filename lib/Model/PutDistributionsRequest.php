@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Model;
+namespace JustPark\Flagr\Model;
 
 use \ArrayAccess;
-use \Justpark\Flagr\ObjectSerializer;
+use \JustPark\Flagr\ObjectSerializer;
 
 /**
  * PutDistributionsRequest Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class PutDistributionsRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'distributions' => '\Justpark\Flagr\Model\Distribution[]'
+        'distributions' => '\JustPark\Flagr\Model\Distribution[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class PutDistributionsRequest implements ModelInterface, ArrayAccess
     /**
      * Gets distributions
      *
-     * @return \Justpark\Flagr\Model\Distribution[]
+     * @return \JustPark\Flagr\Model\Distribution[]
      */
     public function getDistributions()
     {
@@ -224,7 +224,7 @@ class PutDistributionsRequest implements ModelInterface, ArrayAccess
     /**
      * Sets distributions
      *
-     * @param \Justpark\Flagr\Model\Distribution[] $distributions distributions
+     * @param \JustPark\Flagr\Model\Distribution[] $distributions distributions
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -27,16 +27,16 @@
  * Do not edit the class manually.
  */
 
-namespace Justpark\Flagr\Model;
+namespace JustPark\Flagr\Model;
 
 use \ArrayAccess;
-use \Justpark\Flagr\ObjectSerializer;
+use \JustPark\Flagr\ObjectSerializer;
 
 /**
  * EvaluationBatchResponse Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class EvaluationBatchResponse implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'evaluation_results' => '\Justpark\Flagr\Model\EvalResult[]'
+        'evaluation_results' => '\JustPark\Flagr\Model\EvalResult[]'
     ];
 
     /**
@@ -214,7 +214,7 @@ class EvaluationBatchResponse implements ModelInterface, ArrayAccess
     /**
      * Gets evaluation_results
      *
-     * @return \Justpark\Flagr\Model\EvalResult[]
+     * @return \JustPark\Flagr\Model\EvalResult[]
      */
     public function getEvaluationResults()
     {
@@ -224,7 +224,7 @@ class EvaluationBatchResponse implements ModelInterface, ArrayAccess
     /**
      * Sets evaluation_results
      *
-     * @param \Justpark\Flagr\Model\EvalResult[] $evaluation_results evaluation_results
+     * @param \JustPark\Flagr\Model\EvalResult[] $evaluation_results evaluation_results
      *
      * @return $this
      */

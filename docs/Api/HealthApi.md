@@ -1,4 +1,4 @@
-# Justpark\Flagr\HealthApi
+# JustPark\Flagr\HealthApi
 
 All URIs are relative to *http://localhost/api/v1*
 
@@ -19,7 +19,7 @@ Check if Flagr is healthy
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$apiInstance = new Justpark\Flagr\Api\HealthApi(
+$apiInstance = new JustPark\Flagr\Api\HealthApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

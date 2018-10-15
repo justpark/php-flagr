@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,17 +26,17 @@
  * Please update the test case below to test the endpoint.
  */
 
-namespace Justpark\Flagr;
+namespace JustPark\Flagr;
 
-use \Justpark\Flagr\Configuration;
-use \Justpark\Flagr\ApiException;
-use \Justpark\Flagr\ObjectSerializer;
+use \JustPark\Flagr\Configuration;
+use \JustPark\Flagr\ApiException;
+use \JustPark\Flagr\ObjectSerializer;
 
 /**
  * FlagApiTest Class Doc Comment
  *
  * @category Class
- * @package  Justpark\Flagr
+ * @package  JustPark\Flagr
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
